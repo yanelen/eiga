@@ -14,11 +14,7 @@ app.controller('MainController', function($scope, $http){
   function getAnimation(){
    $http.get("http://api.giphy.com/v1/gifs/search?q=" + $scope.search + "&api_key=dc6zaTOxFJmzC&limit=5")
      .success(function(data) {
-       var animations = [];
-        for (i = 0; i < 5; i++){
-          animations.push(data.data[i].images.original.url);
-          $scope.animations = animations;
-        }
+          $scope.animation = data.data[3].images.original.url;
       })
   }
 

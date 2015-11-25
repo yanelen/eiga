@@ -12,7 +12,7 @@
   </head>
   <body ng-controller="MainController" style="background-color: #ededed;"">
     <header>
-      <div class="header container2">
+      <div class="header container">
         <nav>
           <ul class="nav nav-pills pull-right">
             <li class="user"><img src="images/user.png"></li>
@@ -25,34 +25,34 @@
         </div>
       </div>
     </header>
-    <nav class="blog-nav">
-      <div class="search">
-        <div class="form-group">
-          <input type="text" ng-model="search" class="form-control" onclick="select()" ng-change="change()" placeholder="Search Movie" autofocus />
-        </div>
-      </div>
-      <a class="blog-nav-item" href="#">Favorite Movies</a>
-      <a class="blog-nav-item" href="#">Favorite Actors</a>
-      <a class="blog-nav-item" href="#">Notes</a>
-      <a class="blog-nav-item" href="#">Calendar</a>
-    </nav>
-    <div class="container2">
-      <div class="event">
-        <div class="events">
 
+    <div class="container">
+      <nav class="blog-nav">
+        <div class="search">
+          <div class="form-group">
+            <input type="text" ng-model="search" class="form-control" onclick="select()" ng-change="change()" placeholder="Search Movie" autofocus />
+          </div>
+        </div>
+        <a class="blog-nav-item" href="#">Favorite Movies</a>
+        <a class="blog-nav-item" href="#">Favorite Actors</a>
+        <a class="blog-nav-item" href="#">Notes</a>
+        <a class="blog-nav-item" href="#">Calendar</a>
+      </nav>
+      <div class="row">
+        <div class="col-md-4">
           <div ng-if="movie.Response==='True'">
             <img ng-src="{{ 'http://imdb.wemakesites.net/api/1.0/img/?url='+movie.Poster }}">
-            <div ng-repeat="animation in animations" style="width: 300px;">
-              <div id="animation">
-                <figure>
-                  <img src="{{ animation }}" >
-                </figure>
-              </div>
-            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+       </div>
+        <div class="col-md-4">
+          <div id="animation">
+              <img src="{{ animation }}" >
           </div>
         </div>
       </div>
-    </div>
 
     <footer>
       <p>&copy; Eiga</p>
