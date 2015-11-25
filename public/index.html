@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="eigaApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Eiga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  </head>
+  <body ng-controller="MainController">
+    <input type="text" ng-model="search" class="form-control" onclick="select()" ng-change="change()" placeholder="Search Movie" autofocus />
+    <div ng-if="movie.Response==='True'">
+      <img ng-src="{{ 'http://imdb.wemakesites.net/api/1.0/img/?url='+movie.Poster }}">
+      <div ng-repeat="animation in animations">
+        <img src="{{ animation }}">
+      </div>
+    </div>
+
+    <script src="script/angular.min.js"></script>
+    <script src="script/app.js"></script>
+  </body>
+</html>
