@@ -258,6 +258,11 @@ header {
 }
 
 .animation {
+  border: 6px solid #ffffff;
+  box-shadow: 1px 1px 1px #c9c9c9;
+}
+
+.animation img {
   width: 100%
 }
 
