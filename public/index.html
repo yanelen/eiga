@@ -5,23 +5,58 @@
     <title>Eiga</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/blog.css">
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
   </head>
-  <body ng-controller="MainController">
-    <input type="text" ng-model="search" class="form-control" onclick="select()" ng-change="change()" placeholder="Search Movie" autofocus />
-    <div ng-if="movie.Response==='True'">
-      <img ng-src="{{ 'http://imdb.wemakesites.net/api/1.0/img/?url='+movie.Poster }}">
-      <div ng-repeat="animation in animations" style="width: 300px;">
-        <div id="animation">
-          <figure>
-            <img src="{{ animation }}" >
-          </figure>
+  <body ng-controller="MainController" style="background-color: #ededed;"">
+    <header>
+      <div class="header container2">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li class="user"><img src="images/user.png"></li>
+            <li class="user">User</li>
+            <li class="logout" ng-click="mainCtrl.logOut()">
+            </li>
+          </ul>
+        </nav>
+        <div class="logo-s">
+        </div>
+      </div>
+    </header>
+    <nav class="blog-nav">
+      <div class="search">
+        <div class="form-group">
+          <input type="text" ng-model="search" class="form-control" onclick="select()" ng-change="change()" placeholder="Search Movie" autofocus />
+        </div>
+      </div>
+      <a class="blog-nav-item" href="#">Favorite Movies</a>
+      <a class="blog-nav-item" href="#">Favorite Actors</a>
+      <a class="blog-nav-item" href="#">Notes</a>
+      <a class="blog-nav-item" href="#">Calendar</a>
+    </nav>
+    <div class="container2">
+      <div class="event">
+        <div class="events">
+
+          <div ng-if="movie.Response==='True'">
+            <img ng-src="{{ 'http://imdb.wemakesites.net/api/1.0/img/?url='+movie.Poster }}">
+            <div ng-repeat="animation in animations" style="width: 300px;">
+              <div id="animation">
+                <figure>
+                  <img src="{{ animation }}" >
+                </figure>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
+    <footer>
+      <p>&copy; Eiga</p>
+    </footer>
     <script src="script/angular.min.js"></script>
     <script src="script/app.js"></script>
   </body>
