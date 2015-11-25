@@ -34,22 +34,19 @@
           </div>
         </div>
         <a class="blog-nav-item" href="#">Favorite Movies</a>
-        <a class="blog-nav-item" href="#">Favorite Actors</a>
-        <a class="blog-nav-item" href="#">Notes</a>
-        <a class="blog-nav-item" href="#">Calendar</a>
       </nav>
       <div class="row">
         <div class="col-md-4">
           <div ng-if="movie.Response==='True'">
-            <img ng-src="{{ 'http://imdb.wemakesites.net/api/1.0/img/?url='+movie.Poster }}">
+            <img class="poster" ng-src="{{ 'http://imdb.wemakesites.net/api/1.0/img/?url='+movie.Poster }}">
           </div>
         </div>
         <div class="col-md-4">
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
        </div>
         <div class="col-md-4">
-          <div id="animation">
-              <img src="{{ animation }}" >
+          <div>
+              <img class="animation" style="width:100%" src="{{ animation }}" >
           </div>
         </div>
       </div>
