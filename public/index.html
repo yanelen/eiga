@@ -33,7 +33,7 @@
             <input type="text" ng-model="search" class="form-control" onclick="select()" ng-change="change()" placeholder="Search Movie" autofocus />
           </div>
         </div>
-        <a class="blog-nav-item" href="#">Favorite Movies</a>
+        <a class="blog-nav-item" href="#">My Favorite Movies</a>
       </nav>
       <div class="row">
         <div class="col-md-4">
@@ -42,7 +42,39 @@
           </div>
         </div>
         <div class="col-md-4">
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p class="title">{{ movie.Title }}</p>
+          <p>
+            <p>
+            {{ movie.Plot }}
+            </p>
+            Year: {{ movie.Year}}
+            <br>
+            Rate: {{ movie.Rated }}
+            <br>
+            Released: {{ movie.Released }}
+            <br>
+            Runtime: {{ movie.Runtime }}
+            <br>
+            Actors: {{ movie.Actors }}
+            <br>
+            Awards: {{ movie.Awards }}
+            <br>
+            Country: {{ movie.Country }}
+            <br>
+            Director: {{ movie.Director }}
+            <br>
+            Genre: {{ movie.Genre }}
+            <br>
+            Language: {{ movie.Language }}
+            <br>
+            Production: {{ movie.Production }}
+            <br>
+            Writer: {{ movie.Writer }}
+            <br>
+            IMDb rating: {{ movie.imdbRating }}
+            <br>
+            Rotten Tomatoes: {{ movie.imdbRating }}
+          </p>
        </div>
         <div class="col-md-4">
           <div>

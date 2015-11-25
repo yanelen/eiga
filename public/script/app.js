@@ -8,16 +8,18 @@ app.controller('MainController', function($scope, $http){
 
   function getMovie(){
     $http.get("http://www.omdbapi.com/?t=" + $scope.search + "&tomatoes=true&plot=full")
-     .success(function(data){ $scope.movie = data; });
+     .success(function(data){
+       $scope.movie = data;
+       console.log(data);
+     });
   }
 
   function getAnimation(){
    $http.get("http://api.giphy.com/v1/gifs/search?q=" + $scope.search + "&api_key=dc6zaTOxFJmzC&limit=5")
      .success(function(data) {
-          $scope.animation = data.data[4].images.original.url;
-      })
+          $scope.animation = data.data[3].images.original.url;
+      });
   }
-
 
   $scope.select = function(){
       this.setSelectionRange(0, this.value.length);

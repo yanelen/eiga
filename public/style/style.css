@@ -246,49 +246,15 @@ header {
   display: block;
 }
 
-.row {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.details {
-  font-size: 12px;
-}
-
 .title {
   font-size: 18px;
+  font-weight: bold;
   color: #a3a3a3;
 }
 
-@media (max-width: 640px) {
-  .title {
-    font-size: 15px;
-  }
-}
-
-.col1 {
-  width: 30%;
-  float: left;
-}
-
-.col2 {
-  width: 30%;
-  float: left;
-}
-
-.col3 {
-  width: 30%;
-  float: left;
-}
-
-@media (max-width: 640px) {
-  .col1 col2 col3 {
-    width: 100%;
-  }
-}
-
 .poster {
-  width: 100%
+  width: 100%;
+  margin: 10px 0 10px 0;
 }
 
 .animation {
