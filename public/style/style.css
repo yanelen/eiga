@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+/*Slider*/
+
+#animation {
+  overflow: hidden;
+}
+
+#animation figure {
+  position: relative;
+  width: 420%;
+  height: 420%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+}
+
+#animation figure img {
+  width: 25%;
+  height: 25%;
+}

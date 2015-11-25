@@ -12,15 +12,16 @@ app.controller('MainController', function($scope, $http){
   }
 
   function getAnimation(){
-   $http.get("http://api.giphy.com/v1/gifs/search?q=" + $scope.search + "&api_key=dc6zaTOxFJmzC&limit=10")
+   $http.get("http://api.giphy.com/v1/gifs/search?q=" + $scope.search + "&api_key=dc6zaTOxFJmzC&limit=5")
      .success(function(data) {
        var animations = [];
-        for (i = 0; i < 10; i++){
+        for (i = 0; i < 5; i++){
           animations.push(data.data[i].images.original.url);
           $scope.animations = animations;
         }
       })
   }
+
 
   $scope.select = function(){
       this.setSelectionRange(0, this.value.length);
