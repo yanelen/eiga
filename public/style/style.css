@@ -264,6 +264,10 @@ header {
   margin-bottom: 10px;
 }
 
+ul {
+  list-style:none;
+}
+
 /* Footer */
 
 footer {
