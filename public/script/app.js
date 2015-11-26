@@ -1,4 +1,5 @@
 app = angular.module('eigaApp', []);
+
 app.controller('MainController', function($scope, $http){
   if($scope.search === undefined){
     $scope.search = "My Neighbor Totoro";
@@ -29,9 +30,10 @@ app.controller('MainController', function($scope, $http){
     getAnimation();
   }
 
+  var titles = [];
   $scope.create = function(){
-    this.movietitles = [];
-    this.movietitles.push($scope.search);
+    titles.push($scope.search);
+    this.titles = titles;
   }
 
 })
