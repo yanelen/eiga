@@ -10,7 +10,6 @@ app.controller('MainController', function($scope, $http){
     $http.get("http://www.omdbapi.com/?t=" + $scope.search + "&tomatoes=true&plot=full")
      .success(function(data){
        $scope.movie = data;
-       console.log(data);
      });
   }
 
@@ -25,13 +24,9 @@ app.controller('MainController', function($scope, $http){
       this.setSelectionRange(0, this.value.length);
   }
 
-  var timeout;
   $scope.change = function(){
-  if(timeout){
-    clearTimeout(timeout);
-  }
-  timeout = setTimeout(getMovie, 1000);
-  timeout = setTimeout(getAnimation, 1000);
+  getMovie();
+  getAnimation();
   };
 
 })

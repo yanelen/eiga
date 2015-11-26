@@ -30,7 +30,9 @@
       <nav class="blog-nav">
         <div class="search">
           <div class="form-group">
-            <input type="text" ng-model="search" class="form-control" onclick="select()" ng-change="change()" placeholder="Search Movie" autofocus />
+            <form ng-submit="change()">
+              <input type="text" ng-model="search" class="form-control" onclick="select()" placeholder="Search Movie" autofocus />
+            </form>
           </div>
         </div>
       </nav>
