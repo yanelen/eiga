@@ -1,23 +1,18 @@
 var app = angular.module('eigaApp', ['ngRoute']);
 
-app.controller('Ctrl1', function(){
-  this.name = 'Yanelen';
-});
-
-app.controller('Ctrl2', function(){
-  this.age = 43;
-});
-
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $locationProvider.html5Mode({ enabled: true });
     $routeProvider.
-        when('/url1', {
-            templateUrl: 'partial1.html',
-            controller: 'Ctrl1',
-            controllerAs: 'ctrl'
+        when('/', {
+            templateUrl: 'start.html',
+            controller: 'MainController'
+        })
+
+        .when('/movie', {
+            templateUrl: 'movie.html',
+            controller: 'MainController'
         })
 }]);
-
 
 app.controller('MainController', function($scope, $http){
   if($scope.search === undefined){
@@ -54,5 +49,8 @@ app.controller('MainController', function($scope, $http){
     titles.push($scope.search);
     this.titles = titles;
   }
+
+
+
 
 })
