@@ -78,14 +78,12 @@
             <img src="{{ animation }}">
           </div>
           <div ng-click="create()" class="button">
-            Add to my favorite movies
+            Add to My Favorite Movies
           </div>
           <div class="add-movie">
-            <ul>
-              <li ng-repeat="title in titles">
-                {{title}}
-              </li>
-            </ul>
+            <div ng-repeat="title in titles">
+              {{title}}
+            </div>
           </div>
         </div>
       </div>

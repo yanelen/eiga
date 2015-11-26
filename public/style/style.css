@@ -135,7 +135,7 @@ header {
 .add-movie {
   box-shadow: 1px 1px 1px #c9c9c9;
   background-color: #e4f0f5;
-  padding: 16px 30px 10px 30px;
+  padding: 20px;
   border-radius: 10px;
   border: 1px solid #bedfeb;
   margin-top: 20px;
@@ -247,7 +247,12 @@ header {
 
 .poster {
   width: 100%;
-  margin: 10px 0 10px 0;
+}
+
+@media (max-width: 640px) {
+  .poster {
+    margin: 10px 0 10px 0;
+  }
 }
 
 .animation {
