@@ -1,5 +1,5 @@
 {
-  "name": "eiga",
+  "name": "angulartest",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,8 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.3",
-    "mongodb": "^2.0.49",
-    "mongoose": "^4.2.7"
+    "express": "^4.13.3"
   }
 }

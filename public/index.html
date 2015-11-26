@@ -2,96 +2,40 @@
 <html ng-app="eigaApp">
   <head>
     <meta charset="utf-8">
-    <title>Eiga</title>
+    <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/blog.css">
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <base href="/"></base>
   </head>
-  <body ng-controller="MainController" style="background-color: #f5f5f5;"">
-    <header>
-      <div class="header container">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li class="user"><img src="images/user.png"></li>
-            <li class="user">User</li>
-            <li class="logout" ng-click="mainCtrl.logOut()">
-            </li>
-          </ul>
-        </nav>
-        <div class="logo-s">
-        </div>
-      </div>
-    </header>
+  <body>
+    <nav>
+      <ul>
+        <li><a href='/url1'>Template 1</a></li>
+      </ul>
+    </nav>
+    <br/>
+    <br/>
+    <br/>
 
-    <div class="container">
-      <nav class="blog-nav">
-        <div class="search">
-          <div class="form-group">
-            <form ng-submit="change()">
-              <input type="text" ng-model="search" class="form-control" onclick="select()" placeholder="Search Movie" autofocus />
-            </form>
-          </div>
-        </div>
-      </nav>
-      <div class="row">
-        <div class="col-md-4">
-          <div ng-if="movie.Response==='True'">
-            <img class="poster" ng-src="{{ 'http://imdb.wemakesites.net/api/1.0/img/?url='+movie.Poster }}">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <p class="title">{{ movie.Title }}</p>
-            <div>
-              <p>{{ movie.Plot }}</p>
-              <span class="d-label">Year:</span> {{ movie.Year}}
-              <br>
-              <span class="d-label">Genre:</span> {{ movie.Genre }}
-              <br>
-              <span class="d-label">Rate:</span> {{ movie.Rated }}
-              <br>
-              <span class="d-label">Runtime:</span> {{ movie.Runtime }}
-              <br>
-              <span class="d-label">Director:</span> {{ movie.Director }}
-              <br>
-              <span class="d-label">Actors:</span> {{ movie.Actors }}
-              <br>
-              <span class="d-label">Language:</span> {{ movie.Language }}
-              <br>
-              <span class="d-label">Country:</span> {{ movie.Country }}
-              <br>
-              <span class="d-label">Writer:</span> {{ movie.Writer }}
-              <br>
-              <span class="d-label">Awards:</span> {{ movie.Awards }}
-              <br>
-              <span class="d-label">Production:</span> {{ movie.Production }}
-              <br>
-              <span class="d-label">IMDb rating:</span><span class="rating"> {{ movie.imdbRating }}</span>
-              <br>
-              <span class="d-label">Rotten Tomatoes:</span><span class="rating"> {{ movie.imdbRating }}</span>
-            </div>
-          </div>
-        <div class="col-md-4">
-          <div class="animation">
-            <img src="{{ animation }}">
-          </div>
-          <div ng-click="create()" class="button">
-            Add to My Favorite Movies
-          </div>
-          <div class="add-movie">
-            <div ng-repeat="title in titles">
-              {{title}}
-            </div>
-          </div>
-        </div>
-      </div>
 
+    <div ng-view>
+
+
+    </div>
+    <br/>
+    <br/>
+    <br/>
     <footer>
       <p>&copy; Eiga</p>
     </footer>
-    <script src="script/angular.min.js"></script>
-    <script src="script/app.js"></script>
+
   </body>
 </html>
