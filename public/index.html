@@ -77,11 +77,16 @@
           <div class="animation">
             <img src="{{ animation }}">
           </div>
-          <div>
-            <div class="button">Add to my favorite movies</div>
-          </div>
+          <div class="button">Add to my favorite movies</div>
           <div class="add-movie">
-            kdjlakjdlfj
+            <form ng-submit="create()">
+              <input type="submit" value="Add to my favorite movies"/>
+              <ul>
+                <li ng-repeat="title in movietitles">
+                  {{title}}
+                </li>
+              </ul>
+            </form>
           </div>
         </div>
       </div>

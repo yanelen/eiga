@@ -260,6 +260,10 @@ header {
   width: 100%
 }
 
+.col-md-4 {
+  margin-bottom: 10px;
+}
+
 /* Footer */
 
 footer {

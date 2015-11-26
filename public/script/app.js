@@ -21,12 +21,17 @@ app.controller('MainController', function($scope, $http){
   }
 
   $scope.select = function(){
-      this.setSelectionRange(0, this.value.length);
+    this.setSelectionRange(0, this.value.length);
   }
 
   $scope.change = function(){
-  getMovie();
-  getAnimation();
-  };
+    getMovie();
+    getAnimation();
+  }
+
+  $scope.create = function(){
+    this.movietitles = [];
+    this.movietitles.push($scope.search);
+  }
 
 })
