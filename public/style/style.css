@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
+  color: #83878a
 }
 
 body {
@@ -161,9 +162,9 @@ header {
   color: #6aa5ab;
 }
 
-
-.description {
-  font-size: 15px;
+.d-label {
+  background-color: #ffffff;
+  color: #6aa5ab;
 }
 
 .user-message {
@@ -235,7 +236,7 @@ header {
 }
 
 .title {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   color: #6aa5ab;
 }

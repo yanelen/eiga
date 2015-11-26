@@ -42,39 +42,35 @@
         </div>
         <div class="col-md-4">
           <p class="title">{{ movie.Title }}</p>
-          <p>
-            <p>
-            {{ movie.Plot }}
-            </p>
-            Year: {{ movie.Year}}
-            <br>
-            Rate: {{ movie.Rated }}
-            <br>
-            Released: {{ movie.Released }}
-            <br>
-            Runtime: {{ movie.Runtime }}
-            <br>
-            Actors: {{ movie.Actors }}
-            <br>
-            Awards: {{ movie.Awards }}
-            <br>
-            Country: {{ movie.Country }}
-            <br>
-            Director: {{ movie.Director }}
-            <br>
-            Genre: {{ movie.Genre }}
-            <br>
-            Language: {{ movie.Language }}
-            <br>
-            Production: {{ movie.Production }}
-            <br>
-            Writer: {{ movie.Writer }}
-            <br>
-            IMDb rating: {{ movie.imdbRating }}
-            <br>
-            Rotten Tomatoes: {{ movie.imdbRating }}
-          </p>
-       </div>
+            <div>
+              <p>{{ movie.Plot }}</p>
+              <span class="d-label">Year:</span> {{ movie.Year}}
+              <br>
+              <span class="d-label">Rate:</span> {{ movie.Rated }}
+              <br>
+              <span class="d-label">Runtime:</span> {{ movie.Runtime }}
+              <br>
+              <span class="d-label">Actors:</span> {{ movie.Actors }}
+              <br>
+              <span class="d-label">Awards:</span> {{ movie.Awards }}
+              <br>
+              <span class="d-label">Country:</span> {{ movie.Country }}
+              <br>
+              <span class="d-label">Director:</span> {{ movie.Director }}
+              <br>
+              <span class="d-label">Genre:</span> {{ movie.Genre }}
+              <br>
+              <span class="d-label">Language:</span> {{ movie.Language }}
+              <br>
+              <span class="d-label">Production:</span> {{ movie.Production }}
+              <br>
+              <span class="d-label">Writer:</span> {{ movie.Writer }}
+              <br>
+              <span class="d-label">IMDb rating:</span> {{ movie.imdbRating }}
+              <br>
+              <span class="d-label">Rotten Tomatoes:</span> {{ movie.imdbRating }}
+            </div>
+          </div>
         <div class="col-md-4">
           <div class="animation">
             <img src="{{ animation }}">
