@@ -12,18 +12,6 @@ body {
 
 /* Log in & Sign up */
 
-.btn {
-  background-color: #23accf;
-  color: #ffffff;
-  font-size: 18px;
-  padding: 5px 20px;
-}
-
-.btn:hover {
-  background-color: #2797b0;
-  color: #ffffff;
-}
-
 .jumbotron {
   text-align: center;
   padding: 20px 24px;
@@ -143,36 +131,36 @@ header {
   margin-top: -6px;
 }
 
-.add-event {
+.add-movie {
   box-shadow: 1px 1px 1px #c9c9c9;
   background-color: #e4f0f5;
   padding: 16px 30px 10px 30px;
   border-radius: 10px;
   border: 1px solid #bedfeb;
+  margin-top: 20px;
 }
 
 @media (max-width: 640px) {
-  .add-event {
+  .add-movie {
     width: 100%;
   }
 }
 
-.btn-small {
-  background-color: #facd46;
-  font-size: 12px;
+.button {
+  background-color: #ffffff;
+  font-size: 14px;
   padding: 6px 14px 7px 14px;
   display: inline;
-  color: #ffffff;
+  color: #f26c57;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.btn-small:hover {
-  background-color: #dba92a;
-  color: #ffffff;
+.button:hover {
+  background-color: #ebebeb;
+  color: #6aa5ab;
 }
 
-.button {
-  text-align: right;
-}
 
 .description {
   font-size: 15px;
@@ -249,7 +237,7 @@ header {
 .title {
   font-size: 18px;
   font-weight: bold;
-  color: #a3a3a3;
+  color: #6aa5ab;
 }
 
 .poster {
@@ -260,6 +248,7 @@ header {
 .animation {
   border: 6px solid #ffffff;
   box-shadow: 1px 1px 1px #c9c9c9;
+  margin-bottom: 15px;
 }
 
 .animation img {

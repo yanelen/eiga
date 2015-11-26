@@ -10,7 +10,7 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
   </head>
-  <body ng-controller="MainController" style="background-color: #ededed;"">
+  <body ng-controller="MainController" style="background-color: #f5f5f5;"">
     <header>
       <div class="header container">
         <nav>
@@ -33,7 +33,6 @@
             <input type="text" ng-model="search" class="form-control" onclick="select()" ng-change="change()" placeholder="Search Movie" autofocus />
           </div>
         </div>
-        <a class="blog-nav-item" href="#">My Favorite Movies</a>
       </nav>
       <div class="row">
         <div class="col-md-4">
@@ -79,6 +78,12 @@
         <div class="col-md-4">
           <div class="animation">
             <img src="{{ animation }}">
+          </div>
+          <div>
+            <div class="button">Add to my favorite movies</div>
+          </div>
+          <div class="add-movie">
+
           </div>
         </div>
       </div>
