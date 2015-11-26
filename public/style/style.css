@@ -167,6 +167,10 @@ header {
   color: #6aa5ab;
 }
 
+.rating {
+  color: #f26c57;
+}
+
 .user-message {
   padding-bottom: 14px;
 }
