@@ -16,15 +16,26 @@ body {
   color: #6aa5ab;
 }
 
+.big{
+  font-size: 100px;
+  padding-top: 130px;
+}
+
+.starttext {
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+
 .start {
   text-align: center;
-  padding-top: 270px;
   vertical-align: middle;
 }
 
 .start a {
   border: 3px solid #ffffff;
-  font-size: 48px;
+  font-size: 40px;
   padding: 6px 14px 7px 14px;
   display: inline;
   color: #f26c57;
