@@ -2,27 +2,23 @@
   <header>
     <div class="header container">
       <nav>
-        <ul class="nav nav-pills pull-right">
-          <li class="user"><img src="images/user.png"></li>
-          <li class="user">User</li>
-          <li class="logout" ng-click="mainCtrl.logOut()">
-          </li>
+        <ul class="nav">
+          <div class="search">
+            <div class="form-group">
+              <form ng-submit="change()">
+                <input type="text" ng-model="search" class="form-control" onclick="select()" placeholder="Search Movie" autofocus />
+              </form>
+            </div>
+          </div>
         </ul>
       </nav>
-      <div class="logo">Eiga</div>
-      <p style="display: inline;">Movie Collection</p>
+      <div class="logo">Eiga<span>&nbsp;&nbsp;&nbsp;Movie Collection</span></div>
     </div>
   </header>
 
   <div class="container">
     <nav class="blog-nav">
-      <div class="search">
-        <div class="form-group">
-          <form ng-submit="change()">
-            <input type="text" ng-model="search" class="form-control" onclick="select()" placeholder="Search Movie" autofocus />
-          </form>
-        </div>
-      </div>
+
     </nav>
     <div class="row">
       <div class="col-md-4">
@@ -66,7 +62,7 @@
           <img src="{{ animation }}">
         </div>
         <div ng-click="create()" class="button">
-          Add to My Favorite Movies
+          + Add to My Favorite Movies
         </div>
         <div class="add-movie">
           <div ng-repeat="title in titles">
