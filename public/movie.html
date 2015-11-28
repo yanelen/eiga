@@ -23,7 +23,7 @@
     <div class="row">
       <div class="col-md-4">
         <div ng-if="movie.Response==='True'">
-          <img class="poster" ng-src="{{ 'http://imdb.wemakesites.net/api/1.0/img/?url='+movie.Poster }}">
+          <img class="poster" ng-src="{{ movie.Poster=='N/A' ? 'images/na.jpg' : 'http://imdb.wemakesites.net/api/1.0/img/?url='+movie.Poster }}">
         </div>
       </div>
       <div class="col-md-4">
