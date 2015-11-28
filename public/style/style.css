@@ -112,7 +112,7 @@ header {
   border-radius: 10px;
   border: 1px solid #bedfeb;
   margin-top: 20px;
-  height: 240px;
+  min-height: 240px;
 }
 
 @media (max-width: 640px) {
