@@ -65,6 +65,9 @@
           + Add to My Favorite Movies
         </div>
         <div class="add-movie">
+          <div ng-repeat="poster in posters">
+            <img class="poster-s" ng-src="{{poster}}">
+          </div>
           <div ng-repeat="title in titles">
             {{title}}
           </div>

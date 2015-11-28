@@ -45,9 +45,12 @@ app.controller('MainController', function($scope, $http){
   }
 
   var titles = [];
+  var posters = [];
   $scope.create = function(){
     titles.push($scope.search);
+    posters.push($scope.movie.Poster);
     this.titles = titles;
+    this.posters = posters;
   }
 
 
