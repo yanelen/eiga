@@ -44,16 +44,11 @@ app.controller('MainController', function($scope, $http){
     getAnimation();
   }
 
-  var titles = [];
-  var posters = [];
+  var movielist = [];
   $scope.create = function(){
-    titles.push($scope.search);
-    posters.push($scope.movie.Poster);
-    this.titles = titles;
-    this.posters = posters;
+    movie = { title: $scope.search, poster: $scope.movie.Poster }
+    movielist.push(movie);
+    this.movielist = movielist;
   }
-
-
-
 
 })
