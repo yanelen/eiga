@@ -160,6 +160,7 @@ header {
 
 .poster {
   width: 100%;
+  box-shadow: 2px 2px 2px #c9c9c9;
 }
 
 @media (max-width: 640px) {
@@ -171,6 +172,7 @@ header {
 .poster-s {
   width: 50px;
   padding: 0 5px 5px 0;
+  cursor: pointer;
 }
 
 .title-s {

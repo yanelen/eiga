@@ -59,4 +59,10 @@ app.controller('MainController', function($scope, $http){
     this.movielist = movielist;
   }
 
+  $scope.getFavorite = function(title){
+    console.log(title);
+    $scope.search = title;
+    getMovie();
+  }
+
 })
