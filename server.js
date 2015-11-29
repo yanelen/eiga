@@ -2,16 +2,15 @@ var express     = require('express'),
     server      = express(),
     bodyParser  = require('body-parser'),
     mongoose    = require('mongoose'),
-    db          = 'movielist',
     Schema      = mongoose.Schema,
     PORT        = process.env.PORT || 4321;
 
-mongoose.connect('mongodb://localhost:27017/db');
+mongoose.connect('mongodb://localhost:27017/movielist');
 
 var movieSchema  = new Schema({
-  title { type: String, required: true },
-  poster: { type: String, required: true },
-  year: { type: String, required: true }
+  title: String,
+  poster: String,
+  year: String
 });
 var Moive = mongoose.model('Movie', movieSchema);
 
