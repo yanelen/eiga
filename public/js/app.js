@@ -63,6 +63,7 @@ app.controller('MainController', function($scope, $http){
     console.log(title);
     $scope.search = title;
     getMovie();
+    getAnimation();
   }
 
 })
