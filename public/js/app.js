@@ -47,7 +47,7 @@ app.controller('MainController', function($scope, $http){
   var movielist = [];
   $scope.create = function(){
     x = 0;
-    movie = { title: $scope.search, poster: $scope.movie.Poster }
+    movie = { title: $scope.movie.Title, year: $scope.movie.Year, poster: $scope.movie.Poster }
     for (i = 0; i < movielist.length; i++) {
       if ( movie.title === movielist[i].title ) {
         x = 1;
