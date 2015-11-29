@@ -39,7 +39,7 @@ app.controller('MainController', function($scope, $http){
     this.setSelectionRange(0, this.value.length);
   }
 
-  $scope.change = function(){
+  $scope.new = function(){
     getMovie();
     getAnimation();
   }
