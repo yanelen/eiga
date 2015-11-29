@@ -5,11 +5,11 @@
         <tr>
           <td class="form-group search">
             <form ng-submit="change()">
-              <input class="form-control" type="text" ng-model="search" class="form-control" onclick="select()" placeholder="Search Movie" autofocus />
+              <input type="text" ng-model="search" class="form-control" onclick="select()" placeholder="Search Movie" autofocus />
             </form>
           </td>
           <td>
-            <img src="images/search.png" style="width: 25px; margin-left: 5px; padding-bottom: 15px;">
+            <img src="images/search.png" class="search-icon" ng-click="change()">
           </td>
         </tr>
       </table>

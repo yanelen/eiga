@@ -102,6 +102,13 @@ header {
   }
 }
 
+.search-icon {
+  width: 25px;
+  margin-left: 5px;
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+
 
 /* Movie collection */
 
