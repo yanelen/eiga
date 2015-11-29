@@ -65,8 +65,16 @@
         </div>
         <div class="add-movie">
           <div ng-repeat="movie in movielist">
-            <img ng-click="getFavorite(movie.title)" class="poster-s" ng-src="{{movie.poster}}">
-            <p ng-click="getFavorite(movie.title)" class="title-s">{{movie.title}} ({{movie.year}})</p>
+            <table>
+              <tr>
+                <td>
+                  <img ng-click="getFavorite(movie.title)" class="poster-s" ng-src="{{movie.poster}}">
+                </td>
+                <td>
+                  <p ng-click="getFavorite(movie.title)" class="title-s">{{movie.title}} ({{movie.year}})</p>
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>

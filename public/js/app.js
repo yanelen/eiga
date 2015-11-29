@@ -66,4 +66,9 @@ app.controller('MainController', function($scope, $http){
     getAnimation();
   }
 
+  $http.get('/movielist').success(function(data){
+    $scope.movielist = data;
+    console.log('I got the data I requested')
+  });
+
 })
