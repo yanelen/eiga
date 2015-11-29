@@ -46,8 +46,16 @@ app.controller('MainController', function($scope, $http){
 
   var movielist = [];
   $scope.create = function(){
+    x = 0;
     movie = { title: $scope.search, poster: $scope.movie.Poster }
-    movielist.push(movie);
+    for (i = 0; i < movielist.length; i++) {
+      if ( movie.title === movielist[i].title ) {
+        x = 1;
+      }
+    }
+    if (x == 0) {
+      movielist.push(movie);
+    }
     this.movielist = movielist;
   }
 
