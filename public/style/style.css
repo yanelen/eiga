@@ -170,6 +170,11 @@ header {
 
 .poster-s {
   width: 50px;
+  padding: 0 5px 5px 0;
+}
+
+.title-s {
+  display: inline;
 }
 
 .animation {
