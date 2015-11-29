@@ -161,6 +161,7 @@ header {
 .poster {
   width: 100%;
   box-shadow: 2px 2px 2px #c9c9c9;
+  margin-top: 10px;
 }
 
 @media (max-width: 640px) {
@@ -175,9 +176,17 @@ header {
   cursor: pointer;
 }
 
+.poster-s:hover {
+  width: 75px;
+}
+
 .title-s {
   display: inline;
   cursor: pointer;
+}
+
+.title-s:hover {
+  color: #6aa5ab;
 }
 
 .animation {
