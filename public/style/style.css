@@ -177,6 +177,7 @@ header {
 
 .title-s {
   display: inline;
+  cursor: pointer;
 }
 
 .animation {
