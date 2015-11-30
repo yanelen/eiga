@@ -39,16 +39,28 @@
             <br>
             <span class="d-label">Director:</span> {{ movie.Director }}
             <br>
-            <span class="d-label">Actors:</span> {{ movie.Actors }}
-            <br>
+            <table>
+              <tr>
+                <td class="description"><span class="d-label">Actors:</span>&nbsp;</td>
+                <td>{{ movie.Actors }}</td>
+              </tr>
+            </table>
             <span class="d-label">Language:</span> {{ movie.Language }}
             <br>
             <span class="d-label">Country:</span> {{ movie.Country }}
             <br>
-            <span class="d-label">Writer:</span> {{ movie.Writer }}
-            <br>
-            <span class="d-label">Awards:</span> {{ movie.Awards }}
-            <br>
+            <table>
+              <tr>
+                <td class="description"><span class="d-label">Writer:</span>&nbsp;</td>
+                <td>{{ movie.Writer }}</td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="description"><span class="d-label">Awards:</span>&nbsp;</td>
+                <td>{{ movie.Awards }}</td>
+              </tr>
+            </table>
             <span class="d-label">Production:</span> {{ movie.Production }}
             <br>
             <span class="d-label">IMDb rating:</span><span class="rating"> {{ movie.imdbRating }}</span>
