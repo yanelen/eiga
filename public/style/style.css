@@ -143,6 +143,10 @@ header {
   color: #6aa5ab;
 }
 
+.description {
+  vertical-align: top;
+}
+
 .d-label {
   background-color: #ffffff;
   color: #6aa5ab;
