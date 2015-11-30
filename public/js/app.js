@@ -1,18 +1,17 @@
-var movielist = [];
 var app = angular.module('eigaApp', ['ngRoute']);
 
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-    $locationProvider.html5Mode({ enabled: true });
-    $routeProvider.
-        when('/', {
-            templateUrl: 'start.html',
-            controller: 'MainController'
-        })
+  $locationProvider.html5Mode({ enabled: true });
+  $routeProvider.
+    when('/', {
+        templateUrl: 'start.html',
+        controller: 'MainController'
+    })
 
-        .when('/movie', {
-            templateUrl: 'movie.html',
-            controller: 'MainController'
-        })
+    .when('/movie', {
+        templateUrl: 'movie.html',
+        controller: 'MainController'
+    })
 }]);
 
 app.controller('MainController', function($scope, $http){
@@ -45,12 +44,7 @@ app.controller('MainController', function($scope, $http){
     getAnimation();
   }
 
-  $http.get('movielist').success(function(data){
-    $scope.movielist = data;
-    console.log(data);
-  })
-
-
+  var movielist = [];
   $scope.create = function(){
     x = 0;
     movie = { title: $scope.movie.Title, year: $scope.movie.Year, poster: $scope.movie.Poster }
@@ -60,21 +54,15 @@ app.controller('MainController', function($scope, $http){
       }
     }
     if (x == 0) {
-      movielist.push(movie);
-      $http.post('/movies', {
-        title: movie.title,
-        year: movie.year,
-        poster: movie.poster
-      }).success(function(data){
-        this.movielist = movielist;
-      })
+      movielist.unshift(movie);
     }
+    this.movielist = movielist;
   }
 
   $scope.getFavorite = function(title){
-    console.log(title);
     $scope.search = title;
     getMovie();
     getAnimation();
   }
+
 })
