@@ -80,10 +80,10 @@
             <table>
               <tr>
                 <td>
-                  <img ng-click="getFavorite(movie.title)" class="poster-s" ng-src="{{movie.poster}}">
+                  <img ng-click="getFavorite(movie.title)" class="poster-s" ng-src="http://imdb.wemakesites.net/api/1.0/img/?url={{ movie.poster }}">
                 </td>
                 <td>
-                  <p ng-click="getFavorite(movie.title)" class="title-s">{{movie.title}} ({{movie.year}})</p>
+                  <p ng-click="getFavorite(movie.title)" class="title-s">{{ movie.title }} ({{ movie.year }})</p>
                 </td>
               </tr>
             </table>
