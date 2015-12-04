@@ -16,6 +16,10 @@ body {
   color: #6aa5ab;
 }
 
+.logo:hover {
+  color: #6aa5ab;
+}
+
 .logo span {
   font-size: 13px;
   color: #6aa5ab;
