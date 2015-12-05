@@ -27,7 +27,13 @@ body {
 
 .big{
   font-size: 100px;
-  padding-top: 130px;
+  padding-top: 150px;
+}
+
+@media screen and (max-width: 640px) {
+  .big {
+    padding-top: 45px;
+  }
 }
 
 .starttext {
@@ -100,7 +106,7 @@ header {
   font-size: 12px;
 }
 
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
   .search {
     width: 100%;
   }
@@ -126,7 +132,7 @@ header {
   min-height: 240px;
 }
 
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
   .add-movie {
     width: 100%;
   }
@@ -179,7 +185,7 @@ header {
   margin-top: 10px;
 }
 
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
   .poster {
     margin: 10px 0 10px 0;
   }
