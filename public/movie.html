@@ -23,7 +23,7 @@
     <div class="row">
       <div class="col-md-4">
         <div ng-if="movie.Response==='True'">
-          <img class="poster" ng-src="{{ movie.Poster=='N/A' ? 'images/na.png' : 'http://imdb.wemakesites.net/api/1.0/img/?url='+movie.Poster }}">
+          <img class="poster" ng-src="{{ movie.Poster=='N/A' ? 'images/na.png' : 'http://image.tmdb.org/t/p/w780' + poster }}">
         </div>
       </div>
       <div class="col-md-4">
@@ -81,7 +81,7 @@
             <table>
               <tr>
                 <td>
-                  <img ng-click="getFavorite(movie.title)" class="poster-s" ng-src="http://imdb.wemakesites.net/api/1.0/img/?url={{ movie.poster }}">
+                  <img ng-click="getFavorite(movie.title)" class="poster-s" ng-src="{{ 'http://image.tmdb.org/t/p/w780' + movie.poster }}">
                 </td>
                 <td>
                   <p ng-click="getFavorite(movie.title)" class="title-s">{{ movie.title }} ({{ movie.year }})</p>
