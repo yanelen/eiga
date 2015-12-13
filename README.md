@@ -1,6 +1,6 @@
-## Eiga
+# Eiga
 
-Eiga Movie Collection version 1.0 11/30/15
+Eiga Movie Collection version 1.0 11/30/2015
 
 The app is visible at: http://eiga.yanelen.com
 <br><br>
